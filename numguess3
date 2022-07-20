@@ -1,6 +1,8 @@
 <html>
 <head>
  <title>numgusess3</title>
+   <meta charset="uft-8">
+  <meta name "viewpoint"content="width=device-width, initial-sclae=1">
 </head>
 <body>
  <div style="width:80vw">
@@ -19,7 +21,7 @@
  while(true){
   a[k]=prompt(str+a+""+hint)
   c[k]=num
-  b[k]=k+1
+  b[k]=k++
   if(num==a[k]){
    document.write("<br>Congratulation!you guessed it at "+(k+1)+"times")
    document.write("<br>Your input data is "+ a.toString())
