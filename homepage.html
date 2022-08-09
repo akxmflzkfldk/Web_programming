@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+   <body>
+
+   <div class="wrap">
+    <div class="intro_bg">
+        <div class="header">
+            <div class="searchArea">
+            
+           <form>
+            <input type="Search"placeholder="Search">
+           <span>검색</span>
+        </form>
+            </div>
+            <ul class="nav">
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">MEMO</a></li>
+                <li><a href="#">SETTING</a></li>
+                <li><a href="#"><script>
+
+                    var d = new Date();
+                    var year = d.getFullYear(),
+                        month = d.getMonth(),
+                        date = d.getDate(),
+                        day = d.getDay();
+                  
+                    // 요일을 판단
+                    switch(day){
+                      case 0: var dd = "일"; break;
+                      case 1: var dd = "월"; break;
+                      case 2: var dd = "화"; break;
+                      case 3: var dd = "수"; break;
+                      case 4: var dd = "목"; break;
+                      case 5: var dd = "금"; break;
+                      case 6: var dd = "토"; break;
+                      default: break;
+                    }
+                  
+                    document.write(year + "년 ");
+                    document.write((month + 1) + "월 ");
+                    document.write(date + "일 ");
+                    document.write(dd + "요일<br>");
+                  
+                  </script>	
+               
+                </a></li>
+                </ul>
+        </div>
+        <div class="intro_text">
+        <h1>하루의 시작과 끝</h1>
+        <h4 class="contents1"> Today is a Good Day to Live</h4>
+        
+    </div>
+        </div>
+        </div>
+        <ul class="amount">
+            <li>
+                <div>
+                    <div class="contents1">calender</div>
+                    <div class="result">일정표</div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">budget</div>
+                    <div class="result">가계부</div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">diary</div>
+                    <div class="result">일기</div>
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">weather</div>
+                    <div class="result">날씨</div>
+                </div>
+            </li>
+
+        </ul>
+    </body>
+    </html>  
