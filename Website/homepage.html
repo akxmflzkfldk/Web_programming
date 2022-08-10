@@ -2,24 +2,26 @@
 <html lang="ko">
 <head>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script> 
 </head>
    <body>
 
    <div class="wrap">
     <div class="intro_bg">
-        <div class="header">
+        <div class="header" id="link_header">
             <div class="searchArea">
-            
+       
            <form>
             <input type="Search"placeholder="Search">
            <span>검색</span>
         </form>
             </div>
             <ul class="nav">
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">MEMO</a></li>
-                <li><a href="#">SETTING</a></li>
+                <li><a href="#link_header">HOME</a></li>
+                <li><a href="#link_main_text0">강원도</a></li>
+                <li><a href="#link_main_text1">부산</a></li>
+                <li><a href="#link_main_text2">여수</a></li>
                 <li><a href="#"><script>
 
                     var d = new Date();
@@ -28,7 +30,6 @@
                         date = d.getDate(),
                         day = d.getDay();
                   
-                    // 요일을 판단
                     switch(day){
                       case 0: var dd = "일"; break;
                       case 1: var dd = "월"; break;
@@ -46,43 +47,143 @@
                     document.write(dd + "요일<br>");
                   
                   </script>	
-               
+                </a></li>
+                <li><a href="#">
+                    <script>
+                        var url = 'http://api.openweathermap.org/data/2.5/weather?q=seoul&APPID=e11462160015cffa69954c9f67741b7b';
+                
+                        $.getJSON(url, function(data){
+                
+                            // 날씨 데이터 객체
+                            var sys = data.sys; 			// 국가명, 일출/일몰			
+                            var city = data.name; 			// 도시명
+                            var weather = data.weather; 	// 날씨 객체
+                            var main = data.main;  			// 온도 기압 관련 객체
+                     
+                            var wmain = weather[0].main; 	// 구름 상태(Cloudiness)
+                            var w_id = weather[0].id; 		// 날씨상태 id 코드
+                            var icon = weather[0].icon;		// 날씨 아이콘 정보
+                            var country = sys.country;  	// 국가명
+                            var temp = main.temp; 			// 현재 온도
+                            
+                
+                            // 날씨 정보 표시
+                            $('body').append( wmain + ', ' + icon + ' '
+                                + '현재 온도: ' + parseInt(temp-273.15) + ' '
+                                + '최저 온도: ' + parseInt(temp_min-273.15) + ' '
+                                + '최고 온도: ' + parseInt(temp_max-273.15) + ' '
+                                + country + ' ' + city + ' ' + w_id + ' ' + '<br>');
+                
+                            // 날씨 아이콘 표시
+                            var icon_url = 'http://openweathermap.org/img/w/' + icon;
+                            $('body').append("<img src='" + icon_url + ".png'>");
+                
+                        });
+                
+                    </script>
                 </a></li>
                 </ul>
         </div>
         <div class="intro_text">
-        <h1>하루의 시작과 끝</h1>
-        <h4 class="contents1"> Today is a Good Day to Live</h4>
+        <h1>여행을 어디로 갈까요</h1>
+        <h4 class="contents1">" 여름은 바다다. "</h4>
         
     </div>
         </div>
         </div>
         <ul class="amount">
+        
             <li>
+        
                 <div>
-                    <div class="contents1">calender</div>
-                    <div class="result">일정표</div>
+                    
+                    <div class="contents1">GANWONDO</div>
+                    <div class="result #link_main_text0">강원도</div>
                 </div>
             </li>
             <li>
                 <div>
-                    <div class="contents1">budget</div>
-                    <div class="result">가계부</div>
+                    <div class="contents1">BUSAN</div>
+                    <div class="result">부산</div>
                 </div>
             </li>
             <li>
                 <div>
-                    <div class="contents1">diary</div>
-                    <div class="result">일기</div>
-                </div>
-            </li>
-            <li>
-                <div>
-                    <div class="contents1">weather</div>
-                    <div class="result">날씨</div>
+                    <div class="contents1">YEOSU</div>
+                    <div class="result">여수</div>
                 </div>
             </li>
 
         </ul>
+        <div class="main_text0" id="link_main_text0">
+            <h1>강원도</h1>
+            <div class="contents1">GANGWONDO</div>
+<ul class="icons">
+    <li>
+        <div class="icon_img">
+            <img src="속초1.png">
+        </div>
+        <div class="contents1_bold"><br>강릉</br></div>
+        <div class="contexts2"><br>GANGNEUNG</br>강원도의 3대 도시 중 하나</div>
+    <div class="more">
+        <a href="https://naver.com">MORE</a>
+    </div>
+   
+    </li>
+    <li>
+        <div class="icon_img">
+            <img src="속초1.png">
+        </div>
+        <div class="contents1_bold"><br>양양</br></div>
+        <div class="contexts2"><br>YANGYANG</br>하조대해수욕장</div>
+    <div class="more">
+        <a href="https://naver.com">MORE</a>
+    </div>
+    </li>
+    <li>
+        <div class="icon_img">
+            <img src="속초1.png">
+        </div>
+        <div class="contents1_bold"><br>속초</br></div>
+        <div class="contexts2"><br>SOKCHO</br>만석닭강정, 아바이마을</div>
+    <div class="more">
+        <a href="https://naver.com">MORE</a>
+    </div>
+    </li>
+
+    </ul>
+</div>
+<div class="main_text1" id="link_main_text1">
+    <h1>부산</h1>
+    <div class="contents1">BUSAN</div>
+        <div class="service">
+            <div class="busan_photo">
+                <img src= "ㅂ산.png">
+</div>
+<div class="contents2">
+<h2>부산은 짱이다</h2>
+
+<br>대한민국 동남부 해안에 위치한 광역시이다.
+<br>대한민국의 제2의 도시이자 최대의 해양 물류 도시이며, 
+<br>부산항을 중심으로 해상 무역과 물류 산업이 발달하였다.
+<br>일본과는 대한해협과 대마도를 사이에 두고 마주하고 있다. 
+<br>시청 소재지는 연제구 연산동이며, 행정구역으로는 15구 1군을 두고 있다.
+<br>
+<br>
+    <div class="span">
+<a href="https://naver.com">해운대</a></div>
+    <div class="span">
+    <a href="https://naver.com">광안리</a></div>
+     <div class="span">
+<a href="https://naver.com">송도</a>
+            </div>
+<li>
+<span class="main_text2" id="link_main_text2">
+    <h1>여수</h1>
+    <div class="contents1">YEOSU</div>
+</li>
+   </ul>
+  </div>
+
     </body>
     </html>  
