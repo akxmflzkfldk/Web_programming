@@ -3,6 +3,7 @@
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
 kk = 0
+klist =[]
 nt = []
 pt = []
 for ( i=0 ; i<100000001 ; i++ ) {
@@ -26,9 +27,9 @@ for ( i=0 ; i<100000001 ; i++ ) {
   if ( i == 100000000 ) padd(i,kk)
 }
 function padd(t,k) {
-  alert(t + ":" + k + ":" + 4*k/t) 
-  nt.push(t); pt.push(4*k/t)
-kk++
+ alert(t + ":" + k + ":" + 4*k/t) 
+ nt.push(t); pt.push(4*k/t)
+ klist.push(3.14);
 }
  datainfo = {
   labels: nt,
@@ -36,7 +37,7 @@ kk++
    label:'pi',
    backgroundColor:['gray', 'red'],
    borderColor:'red',
-   data:kk,
+   data:klist,
    tension:0.5
   },
   {
@@ -45,9 +46,10 @@ kk++
    borderColor:'blue',
    data:pt,
    tension:0.5
-   },
+   }
    ]
  }
+ 
  const config = {
   type: 'line',
   data:datainfo 
@@ -56,5 +58,3 @@ kk++
  </script>
  </body>
 </html>
-</script>
-</body></html>
