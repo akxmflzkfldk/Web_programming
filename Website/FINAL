@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <title>BONVOYAGE_travel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script> 
+</head>
+   <body>
+    <di id="container">
+        <div class="intro_bg">
+            <div>
+            <div class="header" id="link_header">
+                <div id="logo">
+                    <li><a href="link_header"><h1>[BONVOYAGE]</h1></a></li></div>
+
+            
+            <nav>
+                <ul id="topmenu">
+                    <li><a href="#">공지사항<span></span></a>
+                        <ul>
+                            <li><a href="#">자주 묻는 질문</a></li>
+                            <li><a href="#">1:1문의</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">MENU<span></span></a>
+                        <ul>
+                            <li><a href="#">마이페이지</a></li>
+                            <li><a href="#">여행코스추천</a></li>
+                            <li><a href="#">호텔/펜션</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            
+                        </ul>
+                    </li>
+            </nav>
+</div>
+        <div class="intro_text">
+           
+        <h1>여름을 만끽하라.</h1><br>
+        <h4 class="contents1">"The beaches are waiting for you! "</h4><br><br>
+        <form>
+            <input type="Search"placeholder="여행지를 검색하세요!" list="city"></input>
+           <span><a href="https://google.com">검색</a></span>  
+        <datalist id="city">  
+        <option value="제주도"></option>
+        <option value=""></option>
+    
+      </datalist>
+            </form>
+        
+    </div>
+        </div>
+        </div>
+        <ul class="amount">
+        
+            <li>
+        
+                <div>
+                    <div class="contents1">GANWONDO</div>
+                    <div class="result"><a href="#link_main_text0">강원도</a></div>
+              
+                
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">BUSAN</div>
+                    <div class="result"><a href="#link_main_text1">부산</a></div>
+                 
+                  
+                   
+                </div>
+            </li>
+            <li>
+                <div>
+                    <div class="contents1">JEJU</div>
+                    <div class="result"><a href="#link_main_text2">제주도</a></div>
+                   
+                </div>
+            </li>
+
+        </ul>
+        <div class="main_text0" id="link_main_text0">
+            <h1>강원도</h1>
+            <div class="contents1">GANGWONDO</div>
+<ul class="icons">
+    <li>
+        <div class="icon_img">
+            <img src="r.png">
+        </div>
+        <div class="contents1_bold"><br>강릉</br></div>
+        <div class="contexts2"><br>GANGNEUNG</br>강원도의 3대 도시 중 하나</div>
+    <div class="more">
+        <a href="https://www.gn.go.kr/tour/index.do">MORE</a>
+    </div>
+    </li>
+    <li>
+        <div class="icon_img">
+            <img src="d.png">
+        </div>
+        <div class="contents1_bold"><br>양양</br></div>
+        <div class="contexts2"><br>YANGYANG</br>하조대해수욕장</div>
+    <div class="more">
+        <a href="https://tour.yangyang.go.kr/">MORE</a>
+    </div>
+    </li>
+    <li>
+        <div class="icon_img">
+            <img src="11.Jpg">
+        </div>
+        <div class="contents1_bold"><br>속초</br></div>
+        <div class="contexts2"><br>SOKCHO</br>만석닭강정, 아바이마을</div>
+    <div class="more">
+        <a href="https://www.sokchotour.com/">MORE</a>
+    </div>
+    </li>
+
+    </ul>
+</div>
+<div class="main_text1" id="link_main_text1">
+    <h1>부산</h1>
+    <div class="contents1">BUSAN</div>
+        <div class="service">
+            <div class="busan_photo">
+                <img src= "부우산.png">
+</div>
+<div class="contents2">
+<h2>우리 나라 제2의 도시 MARINE CITY "부산"</h2>
+
+<br>대한민국 동남부 해안에 위치한 광역시이다.
+<br>대한민국의 제2의 도시이자 최대의 해양 물류 도시이며, 
+<br>부산항을 중심으로 해상 무역과 물류 산업이 발달하였다.
+<br>일본과는 대한해협과 대마도를 사이에 두고 마주하고 있다. 
+<br>시청 소재지는 연제구 연산동이며, 행정구역으로는 15구 1군을 두고 있다.
+<br>
+<br>
+<br>
+    <div class="span">
+<a href="https://bto.or.kr/kor/Main.do">MORE ABOUT BUSAN</a></div>
+    <div class="span">
+    <a href="https://naver.com">광안리 GWANGALLI</a></div>
+     <div class="span">
+<a href="https://naver.com">송도 SONGDO</a>
+            </div>
+</div></div></div>
+<div class="main_text2" id="link_main_text2">
+    <ul>
+        <li>
+            <div><H1>제주도</H1></div>
+            <div><H1>JEJU ISLAND</H1></div>
+            <DIV>한라산, 우도, 올레길, 한라봉</DIV>
+       <div class="more2"><a href="https://ijto.or.kr/korean/">MORE JEJU</a></div>
+       
+        </li>
+        <li><h2>세계 7대 자연경관<br>
+            한반도 남서쪽 바다 _ 바다가 아름다운 제주<br>
+           4계절 각각의 모습이 너무나 아름다운 섬<br>
+           여름:시원한 바다와 해변<br>
+           깨끗하고 신선한 특산물과 맛있는 먹거리<br>
+            한국에서 가장 큰 화산섬</h2></li>
+    </ul>
+</div></div></div>
+<footer>
+<div id="bottomMenu">
+    <ul>
+        <li><a href="#">회사소개</a></li>
+        <li><a href="#">개인정보처리방침</a></li>
+        <li><a href="#">여행약관</a></li>  
+        <li><a href="#">사이트맵</a></li> 
+
+    </ul>
+    <div id="id"><p1> 산업정보시스템전공 22110158 임지민<br>
+        geejimin1227@seoultech.ac.kr<br>
+        Tel.)01054471320<br>
+    </p1>
+    </div>
+<div id="company">
+    <p> COPYRIGHT 2022. JIMIN. ALL RIGHT RESERVED</p>
+</div>
+</div>
+
+</footer>
+    </body>
+    </html>  
+    
+    
+    
+ __________________________________________
+ *{
+    list-style:none;
+    text-decoration:none; /*밑줄*/
+    border-collapse:collapse;
+    margin:0px;
+    padding:0px;
+    color:#000;
+}
+h1{
+    font-size:48px;
+    font-weight:100;
+}
+.contents1{
+    font-size:20px;
+}
+.contents1_bold{
+    font-size:18px;
+    font-weight:bold;
+}
+
+/* .contents2{
+
+} */
+.contents3{
+    font-size:15px;
+    font-weight:100;
+}
+
+.result{
+    font-size:24px;
+}
+.result>a{
+    font-size:24px;
+
+}
+
+.intro_bg{
+    background-image:url("006.PNg");
+    width:100%;
+    height:618px;
+}
+.header{
+    display:flex;
+    width: 1280px;
+    margin:auto;
+    height: 86px;
+    
+}
+.searchArea {
+    width:300px;
+    height:40px;
+    margin-top:24px;
+}
+
+.searchArea> li> a{
+    width:50px;
+    color:#fff;
+    font-weight:bold;
+    font-size:30px;
+    cursor:pointer;
+
+}
+header{
+    width:100%;
+    height:100px;
+}
+
+
+
+
+
+#logo h1{
+    font-weight:700;
+    font-size:40px;
+    color:#fff;
+    text-shadow:0 -1px #222;
+    margin: left 300px;
+}
+#logo{
+    float:left;
+    width:250px;
+    height:100px;
+    line-height:100px;
+    padding-left:20px;
+}
+
+ul{
+    list-style:none;
+}
+nav{
+    float:right;
+    width:900px;
+    height:100px;
+    padding-top:40px;
+}
+ #topmenu{
+    height:20px;
+    line-height:10px
+ }
+ #topmenu>li{
+    float:right;
+    position:relative;
+ }
+ #topmenu>li>a{
+    display:block;
+    color:#fff;
+    font-weight:600;
+    text-shadow: 0 1px #07c;
+    padding: 20px 40px;
+ }
+ #topmenu>li>a>span{
+    font-size:0.5em;
+ }
+ #topmenu>li>a:hover{
+    color:#000;
+    text-shadow:0 -1px #07c;
+ }
+ #topmenu>li>ul{
+    display:none;
+    position: absolute;
+    width:160px;
+    background-color:rgba(255,255,255,0.6);
+    left:20px;
+    margin:0;
+ }
+#topmenu>li>ul>li{
+    padding: 10px 10px 10px 30px;
+}
+#topmenu>li>ul>li>a{
+    font-size:14px;
+    padding:10px;
+    color:#000;
+}
+#topmenu>li:hover>ul{
+    display:block;
+    z-index:10;
+}
+#topmenu>li>ul>li>a:hover{
+    color:#f00;
+}
+.amount{
+    position: relative;
+    top:-80px;
+    display:flex;
+    width: 1280px;
+    background: rgba(255,255,255,0.8);
+    box-shadow:0px 0px 50px rgba(0,0,0,0.5);
+    border-radius:15px;
+    margin:auto;
+}
+.amount>li>div{
+    text-align:center;
+    border-right:1px solid gray;
+    margin-top:37px;
+    height:57px;
+}
+.amount>li{
+    flex:1;
+    height:132px;
+}
+.intro_text{
+    width:100%;
+    margin:100px auto 231px auto;
+    text-align:Center;
+
+}.intro_text>h1{
+    font-size:48px;
+    font-weight: bolder;
+    
+}
+.intro_text>h1,
+.intro_text>h4{
+    color:#fff;
+}
+.intro_text> form> input{
+    border:none;
+    width:500px;
+    height:10px;
+    background:rgba(68, 95, 231, 0.3);
+    box-shadow:0px 0px 80px #fff(0,0,0,0.5);
+    border:1px solid black(0,0,0,0.8);
+    border-radius:50px;
+    color:#fff;
+    padding:30px
+}
+.intro_text> form> span>a{
+    width:50px;
+    color:#fff;
+    font-weight:bold;
+    cursor:pointer;
+}
+.main_text0{
+    width:100%;
+    height:601px;
+    margin-top:-132px;
+    background:lightskyblue;
+}
+.main_text0>h1{
+    padding-top:116px;
+    text-align:center;
+}
+.main_text0>.contents1{
+    text-align:center;
+}
+.icons{
+    display:flex;
+    width:1280px;
+    height:302px;
+    margin:auto;
+    
+}
+.icons>li{
+    flex:1;
+    background:white;
+    margin-top:20px;
+    height:300px;
+    text-align:center;
+    /* border-radius:700px; */
+}
+
+.icons>li>.icon_img{
+    margin-top:30px;
+}
+.icons>li:not(:last-child){
+    margin-right:20px;
+}
+.icons .contents2{
+    width: 24px;
+    margin:auto;
+    letter-spacing:-2px;
+}
+.more{
+    width:100px;
+    height:30px;
+background:lightgray;
+color:#fff;
+font-size:12px;
+line-height:30px ;
+margin:15px auto;
+}
+.main_text1{
+    width:100%;
+    height:659px;
+}
+
+.main_text1>h1{
+    padding-top:50px;
+    text-align:center;
+
+}
+.main_text1>.contents1{
+    padding-bottom:10px;
+    text-align:center;
+}
+.service{
+    width:1280px;
+    display:flex;
+    margin: auto;
+    height:427px;
+
+}
+.service>.contents2{
+    padding:20px;
+    margin:auto;
+    }
+
+
+.span{ 
+    width:500px;
+        height:20px;
+        color:#fff;
+        font-size:20px;
+        font-weight: lighter;
+        padding:10px;
+        margin:20px;
+        text-align:center;
+       background:rgba(68, 95, 231, 0.1);
+       border-radius:10px;
+      
+    }
+ 
+.main_text2{
+        width:100%;
+        height:481px;
+        margin:auto;
+        background:url("제주.png");
+    }
+ .main_text2>h1{
+        padding-top:50px;
+       text-align:center;
+    }
+
+.main_text2>ul{
+    display:flex;
+    padding-top:138px
+
+}
+.main_text2>ul>li{
+   flex:1; 
+   text-align:center;
+}
+.main_text2>ul>li>div,
+.main_text2>ul>li>div>h1{
+    color:#000;
+
+}
+.main_text2>ul>li>h2{
+    flex:1; 
+    text-align:center;
+    font-weight:lighter;
+  
+ }
+.more2{
+    width:220px;
+    height:40px;
+    border:1px solid black;
+    line-height:40px;
+    cursor:pointer;
+    margin: 16px auto;
+}
+footer{
+    width:100%;
+    height:100px;
+border-top:2px solid #222;
+}
+#bottomMenu{
+    width: 100%px;
+    height: 20px;
+}
+#bottomMenu ul{
+    margin-top:15px;
+}
+#bottomMenu ul li{
+    float:left;
+    padding:5px 20px;
+    border-right:1px solid #ddd;
+}
+#bottomMenu ul li:last-child{
+    border-right:none;
+}
+#bottomMenu ul li a,#bottomMenu ul li a:visited{
+    font-size:15px;
+    color:#666;
+}
+#bottomMenu{
+    width:100%;
+HEIGHT:20PX;
+position:relative;
+}
+#company{
+    clear:left;
+    margin-top:25px;
+    margin-left:20px;
+}
+#id{
+    position:absolute;
+    right:0;
+    margin-top:1px;
+    margin-right:50px;
+}
+p1{
+    font-size:14px;
+    color:#000;
+}
+
+p{
+    font-size:14px;
+    color:#aaa;
+}
+ 
+    
